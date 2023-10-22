@@ -37,7 +37,7 @@ if ($req->NroPoliza < 0 || $req->NroPoliza > 1000) {
 $MedioContacto = 0;
 
 foreach ($req->ListMediosContacto as $mc) {
-    $MedioContacto++;
+    $MedioContacto = $MedioContacto + 1;
 }
 
 if ($MedioContacto == 0) {
